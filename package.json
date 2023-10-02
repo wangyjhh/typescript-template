@@ -1,7 +1,7 @@
 {
-	"name": "typescript_base",
+	"name": "typescript_template",
 	"version": "1.0.0",
-	"description": "",
+	"description": "This is a TypeScript project template.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {
@@ -21,8 +21,5 @@
 		"rollup-plugin-typescript2": "^0.36.0",
 		"tsx": "^3.13.0",
 		"typescript": "^5.2.2"
-	},
-	"dependencies": {
-		"wechaty": "^1.20.2"
 	}
 }
