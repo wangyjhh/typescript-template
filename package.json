@@ -6,8 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "tsx watch ./src/main.ts",
-		"rollup:build": "rollup -c --bundleConfigAsCjs",
-		"build": "pnpm rollup:build",
+		"rollup:build": "rollup -c",
+		"tsc:build": "tsc && tsc-alias",
+		"build": "pnpm tsc:build",
 		"preview": "node ./dist/main.js"
 	},
 	"keywords": [],
@@ -19,6 +20,7 @@
 		"rollup": "^3.29.4",
 		"rollup-plugin-terser": "^7.0.2",
 		"rollup-plugin-typescript2": "^0.36.0",
+		"tsc-alias": "^1.8.8",
 		"tsx": "^3.13.0",
 		"typescript": "^5.2.2"
 	}
