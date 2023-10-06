@@ -23,8 +23,8 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "wangyjhh",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^20.8.0",
 		"unbuild": "^2.0.0",
