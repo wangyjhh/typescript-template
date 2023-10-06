@@ -2,25 +2,32 @@
 	"name": "typescript_template",
 	"version": "1.0.0",
 	"description": "This is a TypeScript project template.",
-	"main": "main.js",
 	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
+	},
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
-		"dev": "tsx watch ./src/main.ts",
-		"rollup:build": "rollup -c",
-		"tsc:build": "tsc && tsc-alias",
-		"build": "pnpm tsc:build",
-		"preview": "node ./dist/main.js"
+		"dev": "tsx watch ./src/index.ts",
+		"build": "unbuild",
+		"start": "node ./dist/index.mjs",
+		"typecheck": "tsc --noEmit"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@rollup/plugin-commonjs": "^25.0.4",
 		"@types/node": "^20.8.0",
-		"rollup": "^3.29.4",
-		"rollup-plugin-terser": "^7.0.2",
-		"rollup-plugin-typescript2": "^0.36.0",
-		"tsc-alias": "^1.8.8",
+		"unbuild": "^2.0.0",
 		"tsx": "^3.13.0",
 		"typescript": "^5.2.2"
 	}

@@ -1,4 +1,4 @@
-import { add } from "@/model"
+import { add } from "./add"
 
 console.log(add(1, 2))
 
