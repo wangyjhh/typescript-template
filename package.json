@@ -20,6 +20,7 @@
 		"dev": "tsx watch ./src/index.ts",
 		"build": "unbuild",
 		"start": "node ./dist/index.mjs",
+		"test": "vitest",
 		"typecheck": "tsc --noEmit"
 	},
 	"keywords": [],
@@ -27,8 +28,9 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^20.8.0",
-		"unbuild": "^2.0.0",
 		"tsx": "^3.13.0",
-		"typescript": "^5.2.2"
+		"typescript": "^5.2.2",
+		"unbuild": "^2.0.0",
+		"vitest": "^0.34.6"
 	}
 }
