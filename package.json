@@ -27,9 +27,9 @@
 	"author": "wangyjhh",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/node": "^20.8.0",
-		"tsx": "^3.13.0",
-		"typescript": "^5.2.2",
+		"@types/node": "^20.12.7",
+		"tsx": "^3.14.0",
+		"typescript": "^5.4.5",
 		"unbuild": "^2.0.0",
 		"vitest": "^0.34.6"
 	}
