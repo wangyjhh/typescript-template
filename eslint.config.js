@@ -1,13 +1,3 @@
-import antfu from '@antfu/eslint-config'
+import wangyjhh from '@wangyjhh/eslint-config'
 
-export default antfu(
-    {
-        stylistic: {
-            indent: 4,
-        },
-        rules: {
-            'antfu/top-level-function': 'off',
-            'no-console': 'error',
-        },
-    },
-)
+export default wangyjhh()
